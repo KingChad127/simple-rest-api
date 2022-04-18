@@ -1,0 +1,26 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/625cb6a17be0921e1b4e3910
+
+###      
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Abhinav",
+    "subscribedToChannel": "MKBHD"
+}
+
+###
+DELETE http://localhost:3000/subscribers/625dd29fa46a079700c55f59
+
+###
+
+PATCH http://localhost:3000/subscribers/625dd44bca71b2a93b51c615
+Content-Type: application/json
+
+{
+    "name": "New Abhinav"
+}
